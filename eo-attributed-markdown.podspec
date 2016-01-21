@@ -42,6 +42,9 @@
 # Used this tutorial for guidance: http://code.tutsplus.com/tutorials/managing-private-pods-with-cocoapods--cms-25137
 #
 # If you have get a linker error from XCode, try this: pod cache clean
+#
+# Not building for me - look through here: http://stackoverflow.com/questions/9863836/library-not-found-for-lpods
+
 
 
 Pod::Spec.new do |s|
@@ -55,7 +58,7 @@ Pod::Spec.new do |s|
     :git => "https://github.com/ExoticObjects/AttributedMarkdown.git", 
     # :tag => "0" 
   }
-  s.ios.deployment_target = '5.0'
+  s.ios.deployment_target = '9.0'
   s.osx.deployment_target = '10.7'
   s.source_files = 'markdown_lib.m', 'markdown_lib.h', 'markdown_peg.h', 'markdown_output.m', 'markdown_parser.m', 'platform.h'
   s.public_header_files = '*.h'
