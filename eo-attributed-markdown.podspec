@@ -40,6 +40,8 @@
 # script this if the guy never pushes his repo...
 #
 # Used this tutorial for guidance: http://code.tutsplus.com/tutorials/managing-private-pods-with-cocoapods--cms-25137
+#
+# If you have get a linker error from XCode, try this: pod cache clean
 
 
 Pod::Spec.new do |s|
