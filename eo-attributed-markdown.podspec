@@ -37,6 +37,8 @@
 ####################
 # We should now be able to serve AttributedMarkdown from our own github repo. Not ideal, but we can 
 # script this if the guy never pushes his repo...
+#
+# Used this tutorial for guidance: http://code.tutsplus.com/tutorials/managing-private-pods-with-cocoapods--cms-25137
 
 
 Pod::Spec.new do |s|
