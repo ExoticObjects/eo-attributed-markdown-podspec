@@ -1,21 +1,43 @@
-# To push this dumb thing:
+####################
+# Because this..
+#
+# Because the guy who made AttributedMarkdown, which we like, is either dead or doesn't care 
+# and thus won't push his code to the cocoapods repo, we need to make our own private repo and pod:
+#
+####################
+# Do this:
+#
+# Add local podspec repository:
+# pod repo add eo-attributed-markdown-podspec https://github.com/ExoticObjects/eo-attributed-markdown-podspec.git
+#
+# Create a private pod:
+# cd to dir where you want it, then
+# git clone https://github.com/ExoticObjects/eo-attributed-markdown-podspec.git
+# 
+# Push the private pod to the local podspec repository:
 # pod _1.0.0.beta.2_ repo push eo-attributed-markdown-podspec eo-attributed-markdown.podspec --allow-warnings
-
-# which does this:
-
+#
+####################
+# (which does this):
+#
 # Updating the `eo-attributed-markdown-podspec' repo
-
+#
 # From https://github.com/ExoticObjects/eo-attributed-markdown-podspec
 #  * [new branch]      master     -> origin/master
-
+#
 # Adding the spec to the `eo-attributed-markdown-podspec' repo
-
+#
 #  - [Add] eo-attributed-markdown (0.9.2)
-
+#
 # Pushing the `eo-attributed-markdown-podspec' repo
-
+#
 # To https://github.com/ExoticObjects/eo-attributed-markdown-podspec
 #    561fbff..9eba7e5  master -> master
+#
+####################
+# We should now be able to serve AttributedMarkdown from our own github repo. Not ideal, but we can 
+# script this if the guy never pushes his repo...
+
 
 Pod::Spec.new do |s|
   s.name = "eo-attributed-markdown"
