@@ -41,10 +41,16 @@
 #
 # Used this tutorial for guidance: http://code.tutsplus.com/tutorials/managing-private-pods-with-cocoapods--cms-25137
 #
+####################
+# If problems:
+#
 # If you have get a linker error from XCode, try this: pod cache clean
 #
 # Not building for me - look through here: http://stackoverflow.com/questions/9863836/library-not-found-for-lpods
-
+# 
+# This fixed it: http://stackoverflow.com/a/23085107/869838
+#
+# Cocoapods guys are dicks for not handling that. They make libPods.a obsolete, and then DON'T delete it when doing their thing...
 
 
 Pod::Spec.new do |s|
