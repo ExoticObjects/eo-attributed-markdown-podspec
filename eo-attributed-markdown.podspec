@@ -1,14 +1,32 @@
+# To push this dumb thing:
+# pod _1.0.0.beta.2_ repo push eo-attributed-markdown-podspec eo-attributed-markdown.podspec --allow-warnings
+
+# which does this:
+
+# Updating the `eo-attributed-markdown-podspec' repo
+
+# From https://github.com/ExoticObjects/eo-attributed-markdown-podspec
+#  * [new branch]      master     -> origin/master
+
+# Adding the spec to the `eo-attributed-markdown-podspec' repo
+
+#  - [Add] eo-attributed-markdown (0.9.2)
+
+# Pushing the `eo-attributed-markdown-podspec' repo
+
+# To https://github.com/ExoticObjects/eo-attributed-markdown-podspec
+#    561fbff..9eba7e5  master -> master
+
 Pod::Spec.new do |s|
-  s.name         = "eo-attributed-markdown"
-  s.version      = "0.9.2"
-  s.summary      = "A short description of AttributedMarkdown."
-  s.homepage     = "https://github.com/ExoticObjects/AttributedMarkdown"
-  # s.screenshots  = "http://gregorywieber.com/work/attributed_markdown.html"
-  s.license      = { :type => 'MIT / GPL', :file => 'LICENSE' }
-  s.author       = 'Gregory Wieber', 'Jim Radford'
-  s.source = {
-    :git => "git@github.com:ExoticObjects/AttributedMarkdown.git",
-    :tag => "0.9.1"
+  s.name = "eo-attributed-markdown"
+  s.version = "0.9.2"
+  s.summary = "AttributedMarkdown is a markdown parser. But the guys who made it can't publish the cocoapod, so we had to make this stupid private repo..."
+  s.homepage = "https://github.com/ExoticObjects/AttributedMarkdown"
+  s.license = 'MIT'
+  s.author = 'Gregory Wieber', 'Jim Radford'
+  s.source = { 
+    :git => "https://github.com/ExoticObjects/AttributedMarkdown.git", 
+    # :tag => "0" 
   }
   s.ios.deployment_target = '5.0'
   s.osx.deployment_target = '10.7'
