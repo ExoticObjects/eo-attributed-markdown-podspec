@@ -55,7 +55,10 @@
 # and then it 'Just Worked!'
 #
 # Cocoapods guys are dicks for not handling that. They make libPods.a obsolete, and then DON'T delete it when doing their thing...
-
+#
+# To update using a beta version of cocoapods, you must specifically SPECIFY that version, like 
+#
+# pod _1.0.0.beta.2_ --verbose update
 
 Pod::Spec.new do |s|
   s.name = "eo-attributed-markdown"
