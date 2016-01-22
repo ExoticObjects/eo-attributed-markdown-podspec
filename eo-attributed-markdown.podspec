@@ -50,6 +50,10 @@
 # 
 # This fixed it: http://stackoverflow.com/a/23085107/869838
 #
+# followed by clean, clean build folder, delete derived data, clear simulator, restart simulator, and restart Xcode. 
+#
+# and then it 'Just Worked!'
+#
 # Cocoapods guys are dicks for not handling that. They make libPods.a obsolete, and then DON'T delete it when doing their thing...
 
 
