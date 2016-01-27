@@ -28,12 +28,13 @@
 #   --allow-warnings is critical, as this last step lints the thing. You can also append the --verbose 
 #   argument if you want 10,000+ lines of output from xcodebuild.
 #
-#   IMPORTANT: Any time you make a change to your private repo, you must:
-#     - Commit it to github
+#   IMPORTANT: Any time you make a change to your private pod, you must:
+#     - Update the version in your podspec (else nothing will happen! If you don't do this, Cocoapods thinks it's 'clean')
+#     - Commit pod to github
 #     - invoke pod [podVersion] repo push [podName] [podspecPathFromCurrentDir] --allow-warnings
 #     - This command LINTS your pod and commits it to your local podspec repo. You'd have to do the same
 #       thing if committing to public repo...
-#     - Sometimes even that is not enought. Cocoapods doesn't always pick up changes. In that case I've
+#     - Sometimes even that is not enough. Cocoapods doesn't always pick up changes. In that case I've
 #       had to remove the local repo and add it again as above.
 #       pod repo remove [PodName]
 #
