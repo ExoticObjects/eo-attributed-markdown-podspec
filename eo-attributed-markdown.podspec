@@ -10,7 +10,7 @@
 # Add local podspec repository in your local .cocoapods folder (you don't need to cd there...):
 # pod repo add eo-attributed-markdown-podspec https://github.com/ExoticObjects/eo-attributed-markdown-podspec.git
 #
-# Create a private pod:
+# Clone podspec repo from EO github:
 # cd to dir where you want it, then
 # git clone https://github.com/ExoticObjects/eo-attributed-markdown-podspec.git
 # 
