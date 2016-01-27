@@ -33,6 +33,9 @@
 #     - invoke pod [podVersion] repo push [podName] [podspecPathFromCurrentDir] --allow-warnings
 #     - This command LINTS your pod and commits it to your local podspec repo. You'd have to do the same
 #       thing if committing to public repo...
+#     - Sometimes even that is not enought. Cocoapods doesn't always pick up changes. In that case I've
+#       had to remove the local repo and add it again as above.
+#       pod repo remove [PodName]
 #
 ####################
 # (which does this):
