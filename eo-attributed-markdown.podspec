@@ -28,6 +28,12 @@
 #   --allow-warnings is critical, as this last step lints the thing. You can also append the --verbose 
 #   argument if you want 10,000+ lines of output from xcodebuild.
 #
+#   IMPORTANT: Any time you make a change to your private repo, you must:
+#     - Commit it to github
+#     - invoke pod [podVersion] repo push [podName] [podspecPathFromCurrentDir] --allow-warnings
+#     - This command LINTS your pod and commits it to your local podspec repo. You'd have to do the same
+#       thing if committing to public repo...
+#
 ####################
 # (which does this):
 #
