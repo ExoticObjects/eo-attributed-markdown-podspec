@@ -14,7 +14,8 @@
 # cd to dir where you want it, then
 # git clone https://github.com/ExoticObjects/eo-attributed-markdown-podspec.git
 # 
-# Push the private pod to the local podspec repository 
+# Push the private pod to the local podspec repository. The 'eo-attributed-markdown.podspec' arg below is the path
+# to that file, so you should be inside that directory when you execute this command.  
 # Note: (--allow-warnings is critical; did this: _1.0.0.beta.2_ to run that specific version of cooapods)
 # pod _1.0.0.beta.2_ repo push eo-attributed-markdown-podspec eo-attributed-markdown.podspec --allow-warnings
 #
