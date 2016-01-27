@@ -7,20 +7,26 @@
 ####################
 # Do this:
 #
-# Add local podspec repository in your local .cocoapods folder (you don't need to cd there...):
-# pod repo add eo-attributed-markdown-podspec https://github.com/ExoticObjects/eo-attributed-markdown-podspec.git
+# - Add local podspec repository in your local .cocoapods folder (you don't need to cd there...):
+#   
+#     pod repo add eo-attributed-markdown-podspec https://github.com/ExoticObjects/eo-attributed-markdown-podspec.git
 #
-# Clone podspec repo from EO github:
-# cd to dir where you want it, then
-# git clone https://github.com/ExoticObjects/eo-attributed-markdown-podspec.git
+# - Clone podspec repo from EO github:
+#   cd to dir where you want it, then
+#   
+#     git clone https://github.com/ExoticObjects/eo-attributed-markdown-podspec.git
 #
-# Or, if you've built the private pod locally, connect it to a github repo, then...
+# - Or, if you've built the private pod locally, connect it to a github repo, then...
 # 
-# Push the private pod to the local podspec repository. The 'eo-attributed-markdown.podspec' arg below is the path
-# to that file, so you should be inside that directory when you execute this command.  
-# Note: (--allow-warnings is critical; 
-# Did this: _1.0.0.beta.2_ to run that specific version of cooapods - you probably shouldn't do that)
-# pod _1.0.0.beta.2_ repo push eo-attributed-markdown-podspec eo-attributed-markdown.podspec --allow-warnings
+# - Push the private pod to the local podspec repository. The 'eo-attributed-markdown.podspec' arg below is the path
+#   to that file, so you should be inside that directory when you execute this command.  
+#   Note: (--allow-warnings is critical; 
+#   Did this: _1.0.0.beta.2_ to run that specific version of cooapods - you probably shouldn't do that
+#   
+#     pod _1.0.0.beta.2_ repo push eo-attributed-markdown-podspec eo-attributed-markdown.podspec --allow-warnings
+#
+#   --allow-warnings is critical, as this last step lints the thing. You can also append the --verbose 
+#   argument if you want 10,000+ lines of output from xcodebuild.
 #
 ####################
 # (which does this):
