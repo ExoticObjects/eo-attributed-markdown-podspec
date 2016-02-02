@@ -29,8 +29,8 @@ pod _1.0.0.beta.2_ repo push eo-attributed-markdown-podspec eo-attributed-markdo
 - **IMPORTANT**: Any time you make a change to your private pod, you must:
      - Update the version in your podspec (else nothing will happen! If you don't do this, Cocoapods thinks it's 'clean')
      - Commit pod to github
-     - invoke pod [podVersion] repo update [podName]
-     - invoke pod [podVersion] repo push [podName] [podspecPathFromCurrentDir] --allow-warnings
+     - invoke `pod [podVersion] repo update [podName]`
+     - invoke `pod [podVersion] repo push [podName] [podspecPathFromCurrentDir] --allow-warnings`
      - This command LINTS your pod and commits it to your local podspec repo. You'd have to do the same
        thing if committing to public repo...
 
